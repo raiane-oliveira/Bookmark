@@ -1,9 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Header from "./components/Header";
 import "./global.css";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
    <React.StrictMode>
-      <h1>Hello, world</h1>
+      <main className="main-content">
+         <Header />
+      </main>
    </React.StrictMode>
 );

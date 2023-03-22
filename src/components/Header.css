@@ -1,0 +1,32 @@
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 4.5rem;
+}
+
+.navigation-header {
+   display: flex;
+   align-items: center;
+   gap: 4rem;
+}
+
+.navigation-header a,
+.navigation-header .btn-red {
+   text-transform: uppercase;
+   letter-spacing: 0.2rem;
+   font-size: 1.4rem;
+}
+
+.navigation-header a {
+   font-weight: 400;
+   transition: 0.2s;
+}
+
+.navigation-header a:hover {
+   color: var(--soft-red);
+}
+
+.navigation-header .btn-red {
+   font-weight: 500;
+}
