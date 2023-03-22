@@ -1,12 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
+import Introduction from "./components/Introduction";
 import "./global.css";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
    <React.StrictMode>
-      <main className="main-content">
+      <div className="container">
          <Header />
-      </main>
+
+         <main className="main-content">
+            <Introduction />
+         </main>
+      </div>
    </React.StrictMode>
 );

@@ -1,4 +1,5 @@
 import logo from "../assets/logo-bookmark.svg";
+import Button from "./Button";
 import "./Header.css";
 
 export default function Header() {
@@ -11,7 +12,7 @@ export default function Header() {
             <a href="#pricing">Pricing</a>
             <a href="#contact">Contact</a>
             <a href="">
-               <button className="btn-red">Login</button>
+               <Button title="Login" color="red" />
             </a>
          </nav>
       </header>

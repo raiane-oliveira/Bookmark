@@ -1,0 +1,50 @@
+.introduction-bookmark {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10rem 0;
+}
+
+.text-introduction {
+   display: flex;
+   flex-direction: column;
+   gap: 2.8rem;
+   max-width: 50rem;
+}
+
+.title-text-introduction {
+   font-size: 5.2rem;
+   font-weight: 500;
+   line-height: 1;
+}
+
+.text-introduction p {
+   color: var(--grayish-blue);
+   line-height: 1.5;
+}
+
+.btns-introduction {
+   display: flex;
+   gap: 2rem;
+}
+
+.btn-blue {
+   background-color: var(--soft-blue);
+   color: white;
+   border-color: var(--soft-blue);
+}
+
+.btn-blue:hover {
+   background-color: white;
+   color: var(--soft-blue);
+}
+
+.btn-gray {
+   color: var(--very-dark-blue);
+   border-color: #f0f0f0;
+}
+
+.btn-gray:hover {
+   border-color: var(--very-dark-blue);
+   background-color: white;
+}

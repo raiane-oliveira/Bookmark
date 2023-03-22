@@ -34,24 +34,12 @@ a {
    text-decoration: none;
 }
 
-.main-content {
+img {
+   max-width: 100%;
+}
+
+.container {
    max-width: 1440px;
    margin: auto;
    padding: 0 4rem;
-}
-
-/* Reusable classes */
-.btn-red {
-   background-color: var(--soft-red);
-   color: white;
-   border-radius: 5px;
-   border: 2px solid var(--soft-red);
-   padding: 1rem 3.5rem;
-   box-shadow: 0 5px 1rem rgba(145, 148, 161, 0.5);
-   transition: 0.2s;
-}
-
-.btn-red:hover {
-   background-color: white;
-   color: var(--soft-red);
 }
