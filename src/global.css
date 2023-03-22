@@ -1,0 +1,35 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --soft-blue: hsl(231, 69%, 60%);
+   --soft-red: hsl(0, 94%, 66%);
+   --grayish-blue: hsl(229, 8%, 60%);
+   --very-dark-blue: hsl(229, 31%, 21%);
+
+   font-size: 62.5%;
+}
+
+body {
+   -webkit-font-smoothing: antialiased;
+   font-size: 1.8rem;
+   font-family: "Rubik", sans-serif;
+   color: var(--very-dark-blue);
+}
+
+input,
+button {
+   font: 400 1.6rem "Rubik", sans-serif;
+}
+
+button {
+   cursor: pointer;
+}
+
+a {
+   color: inherit;
+   text-decoration: none;
+}
