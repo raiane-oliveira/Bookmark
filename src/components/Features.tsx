@@ -3,8 +3,13 @@ import TitleSection from "./TitleSection";
 import imgTab1 from "../assets/illustration-features-tab-1.svg";
 
 import "./Features.css";
+import { MouseEvent, useState } from "react";
 
 export default function Features() {
+   function handleChangeFeature(event: MouseEvent) {
+      const target = event.currentTarget;
+   }
+
    return (
       <article className="features-bookmark">
          <TitleSection
@@ -15,11 +20,24 @@ export default function Features() {
          />
          <div className="wrapper">
             <div className="tabs-features">
-               <span className="tab1 tab-selected title-tab-features">
+               <span
+                  onClick={handleChangeFeature}
+                  className="tab1 tab-selected title-tab-features"
+               >
                   Simple Bookmarking
                </span>
-               <span className="tab2 title-tab-features">Speedy Searching</span>
-               <span className="tab3 title-tab-features">Easy Sharing</span>
+               <span
+                  onClick={handleChangeFeature}
+                  className="tab2 title-tab-features"
+               >
+                  Speedy Searching
+               </span>
+               <span
+                  onClick={handleChangeFeature}
+                  className="tab3 title-tab-features"
+               >
+                  Easy Sharing
+               </span>
             </div>
          </div>
 

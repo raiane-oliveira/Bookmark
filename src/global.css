@@ -11,6 +11,8 @@
    --very-dark-blue: hsl(229, 31%, 21%);
 
    font-size: 62.5%;
+   scroll-behavior: smooth;
+   scroll-padding-top: 3rem;
 }
 
 body {

@@ -38,6 +38,7 @@
 
 .title-tab-features.tab-selected {
    color: var(--very-dark-blue);
+   transition: 0.2s;
 }
 
 .title-tab-features.tab-selected.tab1::after {
