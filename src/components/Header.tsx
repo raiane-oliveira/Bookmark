@@ -9,9 +9,9 @@ export default function Header() {
 
          <nav className="navigation-header">
             <a href="#features">Features</a>
-            <a href="#pricing">Pricing</a>
+            <a href="#extension">Extension</a>
             <a href="#contact">Contact</a>
-            <a href="">
+            <a href="#">
                <Button title="Login" color="red" />
             </a>
          </nav>
