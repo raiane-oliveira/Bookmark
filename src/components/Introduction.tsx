@@ -21,9 +21,7 @@ export default function Introduction() {
                <Button title="Get it on Firefox" color="gray" />
             </div>
          </section>
-         <section className="image-introduction">
-            <img src={illustrationHero} alt="Illustration Hero" />
-         </section>
+         <img src={illustrationHero} alt="Illustration Hero" />
       </article>
    );
 }

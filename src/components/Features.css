@@ -1,0 +1,71 @@
+.features-bookmark {
+   display: grid;
+   gap: 4.4rem;
+   margin-bottom: 10rem;
+}
+
+.wrapper {
+   width: 80rem;
+   position: relative;
+   margin: auto;
+}
+
+.tabs-features {
+   display: flex;
+   justify-content: space-around;
+}
+
+.wrapper::after {
+   content: "";
+   display: block;
+   width: 100%;
+   border-bottom: 0.1px solid var(--grayish-blue);
+   opacity: 0.4;
+   margin-top: 1.5rem;
+}
+
+.title-tab-features {
+   display: block;
+   padding: 1.5rem;
+   cursor: pointer;
+   color: var(--grayish-blue);
+   transition: 0.2s;
+}
+
+.title-tab-features:hover {
+   color: var(--soft-red);
+}
+
+.title-tab-features.tab-selected {
+   color: var(--very-dark-blue);
+}
+
+.title-tab-features.tab-selected.tab1::after {
+   content: "";
+   display: block;
+   border: 2px solid var(--soft-red);
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 29rem;
+}
+
+.title-tab-features.tab-selected.tab2::after {
+   content: "";
+   display: block;
+   border: 2px solid var(--soft-red);
+   position: absolute;
+   bottom: 0;
+   left: 29rem;
+   width: 25.1rem;
+}
+
+.title-tab-features.tab-selected.tab3::after {
+   content: "";
+   display: block;
+   border: 2px solid var(--soft-red);
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   width: 25.1rem;
+}

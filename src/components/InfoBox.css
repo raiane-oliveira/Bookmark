@@ -1,0 +1,18 @@
+.info-box {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.text-info-box {
+   max-width: 45rem;
+}
+
+.text-info-box .paragraph,
+.text-info-box .title {
+   text-align: left;
+}
+
+.text-info-box .btn-blue {
+   margin-top: 2.6rem;
+}

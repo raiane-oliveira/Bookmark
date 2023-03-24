@@ -2,7 +2,7 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
-   padding: 12rem 0;
+   padding: 12rem 0 9rem 0;
 }
 
 .text-introduction {
