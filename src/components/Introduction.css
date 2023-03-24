@@ -2,7 +2,7 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
-   padding: 10rem 0;
+   padding: 12rem 0;
 }
 
 .text-introduction {
@@ -15,12 +15,12 @@
 .title-text-introduction {
    font-size: 5.2rem;
    font-weight: 500;
-   line-height: 1;
+   line-height: 1.1;
 }
 
 .text-introduction p {
    color: var(--grayish-blue);
-   line-height: 1.5;
+   line-height: 1.7;
 }
 
 .btns-introduction {

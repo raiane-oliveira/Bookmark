@@ -32,3 +32,8 @@
    border-color: var(--soft-red);
    color: white;
 }
+
+.navigation-header .btn-red:hover {
+   background-color: white;
+   color: var(--soft-red);
+}
