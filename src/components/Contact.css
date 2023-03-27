@@ -1,0 +1,68 @@
+.contact-section {
+  background: var(--soft-blue);
+  display: grid;
+  place-items: center;
+  gap: 3.5rem;
+  padding: 6rem 0 7rem 0;
+  color: white;
+}
+
+.contact-section .btn-red {
+  background-color: var(--soft-red);
+  border-color: var(--soft-red);
+  color: white;
+}
+
+.contact-section .btn-red:hover {
+  background-color: white;
+  color: var(--soft-red);
+}
+
+.data-contact {
+  letter-spacing: 0.5rem;
+  font-size: 1.4rem;
+  line-height: 2;
+}
+
+.title-contact {
+  font-weight: 500;
+  font-size: 3.2rem;
+  max-width: 45rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.form-contact {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 40%;
+}
+
+.form-contact input {
+  background-color: white;
+  height: 100%;
+  width: 60%;
+  padding: 1.2rem;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+}
+
+.form-contact input:focus {
+  outline-color: transparent;
+}
+
+.form-contact input::placeholder {
+  color: var(--grayish-blue);
+}
+
+@media (max-width: 948px) {
+  .form-contact {
+    flex-direction: column;
+  }
+
+  .form-contact input {
+    width: 100%;
+  }
+}

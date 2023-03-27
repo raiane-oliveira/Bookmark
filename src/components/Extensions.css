@@ -1,12 +1,81 @@
 .extensions-section {
-   margin: 4rem 0;
+  margin: 4rem 0 20rem 0;
 }
 
 .wrapper-extensions {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
 
-   margin: 5rem 0;
+  margin: 5rem 0;
+}
+
+.box-extension {
+  background: white;
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 1.6rem;
+  padding: 2.5rem;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: max-content;
+}
+
+.box-extension::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("../assets/bg-dots.svg") no-repeat;
+  width: 100%;
+  height: 5px;
+  bottom: 9.5rem;
+}
+
+.box-extension:nth-child(2) {
+  transform: translateY(3rem);
+}
+
+.box-extension:nth-child(3) {
+  transform: translateY(6rem);
+}
+
+.box-extension img {
+  width: 10rem;
+  height: 10rem;
+  margin: 2rem 0;
+}
+
+.title-box-extension {
+  font-weight: 500;
+}
+
+.box-extension span {
+  color: var(--grayish-blue);
+  font-size: 1.5rem;
+}
+
+.box-extension .btn-blue {
+  font-size: 1.5rem;
+  margin-top: 5.5rem;
+}
+
+@media (max-width: 859px) {
+  .wrapper-extensions {
+    flex-wrap: wrap;
+  }
+
+  .box-extension {
+    margin-bottom: 0;
+  }
+
+  .box-extension:nth-child(2) {
+    transform: none;
+  }
+  .box-extension:nth-child(3) {
+    transform: none;
+  }
 }

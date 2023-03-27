@@ -1,50 +1,66 @@
 .introduction-bookmark {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   padding: 12rem 0 9rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12rem 0 9rem 0;
 }
 
 .text-introduction {
-   display: flex;
-   flex-direction: column;
-   gap: 2.8rem;
-   max-width: 50rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+  max-width: 50rem;
 }
 
 .title-text-introduction {
-   font-size: 5.2rem;
-   font-weight: 500;
-   line-height: 1.1;
+  font-size: 5.2rem;
+  font-weight: 500;
+  line-height: 1.1;
 }
 
 .text-introduction p {
-   color: var(--grayish-blue);
-   line-height: 1.7;
+  color: var(--grayish-blue);
+  line-height: 1.7;
 }
 
 .btns-introduction {
-   display: flex;
-   gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
 
 .btn-blue {
-   background-color: var(--soft-blue);
-   color: white;
-   border-color: var(--soft-blue);
+  background-color: var(--soft-blue);
+  color: white;
+  border-color: var(--soft-blue);
 }
 
 .btn-blue:hover {
-   background-color: white;
-   color: var(--soft-blue);
+  background-color: white;
+  color: var(--soft-blue);
 }
 
 .btn-gray {
-   color: var(--very-dark-blue);
-   border-color: #f0f0f0;
+  color: var(--very-dark-blue);
+  border-color: #f0f0f0;
 }
 
 .btn-gray:hover {
-   border-color: var(--very-dark-blue);
-   background-color: white;
+  border-color: var(--very-dark-blue);
+  background-color: white;
+}
+
+@media (max-width: 1135px) {
+  .introduction-bookmark {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  .text-introduction {
+    max-width: 80rem;
+    text-align: center;
+  }
+
+  .btns-introduction {
+    margin: auto;
+  }
 }
