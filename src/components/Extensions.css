@@ -68,6 +68,10 @@
     flex-wrap: wrap;
   }
 
+  .extensions-section {
+    margin-bottom: 11rem;
+  }
+
   .box-extension {
     margin-bottom: 0;
   }

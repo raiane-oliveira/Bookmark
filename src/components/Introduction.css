@@ -25,7 +25,7 @@
 
 .btns-introduction {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .btn-blue {
@@ -53,6 +53,7 @@
   .introduction-bookmark {
     flex-wrap: wrap-reverse;
     justify-content: center;
+    padding-top: 7rem;
   }
 
   .text-introduction {
@@ -62,5 +63,11 @@
 
   .btns-introduction {
     margin: auto;
+  }
+}
+
+@media (max-width: 577px) {
+  .title-text-introduction {
+    font-size: 4.2rem;
   }
 }

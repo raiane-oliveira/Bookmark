@@ -43,7 +43,7 @@ img {
 .container {
   max-width: 1300px;
   margin: auto;
-  padding: 0 5rem;
+  padding: 0 3rem;
 }
 
 .footer {
@@ -78,7 +78,7 @@ img {
 
 .social-media {
   display: flex;
-  gap: 3rem;
+  gap: 4rem;
 }
 
 .social-media img {
@@ -88,4 +88,38 @@ img {
 .social-media img:hover {
   filter: invert(70%) sepia(60%) saturate(5507%) hue-rotate(322deg)
     brightness(94%) contrast(110%);
+}
+
+@media (max-width: 758px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .footer-nav img {
+    padding-bottom: 2rem;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .footer-nav a {
+    padding: 2rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 577px) {
+  body {
+    font-size: 1.6rem;
+  }
+
+  .title {
+    font-size: 3rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
 }

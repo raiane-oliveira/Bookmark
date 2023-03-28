@@ -3,7 +3,7 @@
   display: grid;
   place-items: center;
   gap: 3.5rem;
-  padding: 6rem 0 7rem 0;
+  padding: 6rem 2rem 7rem 2rem;
   color: white;
 }
 
@@ -22,6 +22,7 @@
   letter-spacing: 0.5rem;
   font-size: 1.4rem;
   line-height: 2;
+  text-align: center;
 }
 
 .title-contact {
@@ -37,7 +38,7 @@
   display: flex;
   justify-content: center;
   gap: 2rem;
-  width: 40%;
+  width: 50%;
 }
 
 .form-contact input {
@@ -64,5 +65,15 @@
 
   .form-contact input {
     width: 100%;
+  }
+}
+
+@media (max-width: 544px) {
+  .form-contact {
+    width: 80%;
+  }
+
+  .title-contact {
+    font-size: 2.8rem;
   }
 }
