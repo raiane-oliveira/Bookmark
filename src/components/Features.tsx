@@ -35,6 +35,7 @@ export default function Features() {
   function handleChangeFeature(e: MouseEvent) {
     const target = e.currentTarget;
     const tab = target.getAttribute("data-tab");
+
     if (tab === "2") {
       setTab(
         <InfoBox
@@ -87,8 +88,6 @@ export default function Features() {
       );
     }
   }
-
-  console.log("Renderizou");
 
   return (
     <article className="features-bookmark">

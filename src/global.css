@@ -97,8 +97,8 @@ img {
     gap: 2rem;
   }
 
-  .footer-nav img {
-    padding-bottom: 2rem;
+  .footer-nav svg {
+    margin-bottom: 2rem;
   }
 
   .footer-nav {

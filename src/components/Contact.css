@@ -41,17 +41,50 @@
   width: 50%;
 }
 
+.wrapper-input {
+  width: 60%;
+  position: relative;
+  transition: 0.4s;
+}
+
+.wrapper-input.error-input::before {
+  content: "";
+  display: block;
+  height: 160%;
+  width: 101.5%;
+  background-color: var(--soft-red);
+  position: absolute;
+  top: -0.2rem;
+  left: -0.22rem;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.wrapper-input.error-input::after {
+  content: "Whoops, make sure it's an email or isn't blank";
+  position: absolute;
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-style: italic;
+  padding: 0.4rem 1rem;
+}
+
 .form-contact input {
   background-color: white;
   height: 100%;
-  width: 60%;
-  padding: 1.2rem;
-  border: 1px solid white;
+  width: 100%;
+  padding: 1.2rem 2rem;
+  border: 0;
   border-radius: 0.5rem;
+  color: var(--very-dark-blue);
+  position: relative;
+  z-index: 1000;
 }
 
 .form-contact input:focus {
   outline-color: transparent;
+  outline-width: 0;
 }
 
 .form-contact input::placeholder {
@@ -63,8 +96,12 @@
     flex-direction: column;
   }
 
-  .form-contact input {
+  .form-contact .wrapper-input {
     width: 100%;
+  }
+
+  .wrapper-input.error-input {
+    margin-bottom: 1.8rem;
   }
 }
 
