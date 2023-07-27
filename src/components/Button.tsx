@@ -3,12 +3,12 @@ import "./Button.css";
 interface ButtonProps {
   title: string;
   color: string;
-  typeBtn?: string;
+  typeBtn?: 'submit' | 'button';
 }
 
-export default function Button({ title, color, typeBtn }: ButtonProps) {
+export default function Button({ title, color, typeBtn = 'button' }: ButtonProps) {
   return (
-    <button type={typeBtn ? typeBtn : "button"} className={`btn btn-${color}`}>
+    <button type={typeBtn} className={`btn btn-${color}`}>
       {title}
     </button>
   );
